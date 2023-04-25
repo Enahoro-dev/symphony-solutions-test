@@ -12,6 +12,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run cypress:run --headless --reporter mochawesome --reporter-options reportDir=results/mochawesome
-    
+          build: npm run cypress:run --headless --config-file=cypress.config.js
   
