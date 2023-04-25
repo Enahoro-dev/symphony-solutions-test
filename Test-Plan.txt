@@ -9,7 +9,6 @@ Testing Strategy:
 -Data-driven testing will be used to test multiple options.
 -The test suite will be upload to my public Github repository.
 -A CI/CD pipeline will be set up using github actions.
--Parrallel testing will be implemented.
 -Clear instructions will be provided in the Readme file on how to run the automated tests locally and on CI.
 
 Automated Tests:
@@ -23,7 +22,8 @@ Test Execution and Reporting:
 -Cypress (v-12.10.0) will be used as the automated testing framework for this project.
 -Cypress provides built-in test runner and test reporting capabilities.
 -Cypress Dashboard will be used for advanced test reporting and analysis.
--Test results, logs, and screenshots will be captured and reported in the Cypress Test Runner interface.
+-Test results, logs, and videos will be captured and reported in the Cypress Test Runner interface.
+-The Mochawesome test reporting tool was used and the reports were stored in a local folder.
 
 Build Tool:
 -NPM (Node Package Manager) will be used as the build tool for this project.
