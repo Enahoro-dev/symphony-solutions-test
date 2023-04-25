@@ -1,0 +1,38 @@
+Test Plan for Automated Web-UI Tests for Symphony Solutions Vacancies Page:
+
+Testing Strategy:
+-The testing approach will be focused on functional testing of the Symphony Solutions Vacancies page.
+-Automated tests will be designed to verify the presence of various elements on the page, such as the Symphony Solutions logo, menu items, "Apply now" button, and specific div elements.
+-Tests will be executed on both desktop and mobile devices to ensure cross-device compatibility.
+-Page Object Model (POM) design pattern will be used to create a page object for the Vacancies page to improve code reusability and maintainability.
+-Assertions will be implemented to verify the expected behavior of the page elements.
+-Data-driven testing will be used to test multiple options.
+-The test suite will be upload to my public Github repository.
+-A CI/CD pipeline will be set up using github actions.
+-Parrallel testing will be implemented.
+-Clear instructions will be provided in the Readme file on how to run the automated tests locally and on CI.
+
+Automated Tests:
+Test 1: Verify the presence of Symphony Solutions Logo element.
+Test 2: Verify the presence of 7 menu items in the header with the correct names: "Who we are", "Benefits", "Projects", "Services", "Join Us", "Blog", "Contacts".
+Test 3: Verify the presence of "Apply now" button.
+Test 4: Verify the presence of DIV element with class name "filterItemsWrapper" and more than 0 child DIV elements.
+Test 5: Verify the presence of the text in 4 <li> elements of the "Delivery centers" element in the footer.
+
+Test Execution and Reporting:
+-Cypress (v-12.10.0) will be used as the automated testing framework for this project.
+-Cypress provides built-in test runner and test reporting capabilities.
+-Cypress Dashboard will be used for advanced test reporting and analysis.
+-Test results, logs, and screenshots will be captured and reported in the Cypress Test Runner interface.
+
+Build Tool:
+-NPM (Node Package Manager) will be used as the build tool for this project.
+-NPM scripts can be defined in the package.json file to execute tests and perform other tasks, making it convenient to run tests locally and on CI.
+
+Acceptance Criteria:
+-Automated tests should be able to run successfully on both desktop and mobile devices.
+-Tests should verify the presence of expected elements on the Symphony Solutions Vacancies page.
+-Tests should be well-organized, readable, and easy to maintain.
+-Test suite should be uploaded to a public repository on Github
+-Test results and reports should be available for review and analysis.
+-Readme file should provide clear instructions on how to run the automated tests locally and on CI, including any dependencies or configuration requirements.
