@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-25T20:04:36.179Z",
+    "end": "2023-04-25T20:04:44.579Z",
+    "duration": 8400,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "59eec195-7ab4-467c-9d88-32a7af95f33a",
+      "title": "",
+      "fullFile": "cypress/e2e/div.cy.js",
+      "file": "cypress/e2e/div.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34de75aa-0674-4470-80c0-cc31a2a77d1f",
+          "title": "Test cases for the \"filterItemsWrapper\" DIV",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Has DIV element with class name \"filterItemsWrapper\" and more than 0 child DIV elements on desktop",
+              "fullTitle": "Test cases for the \"filterItemsWrapper\" DIV Has DIV element with class name \"filterItemsWrapper\" and more than 0 child DIV elements on desktop",
+              "timedOut": null,
+              "duration": 2207,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "vacancyPage.enableDesktopView();\nvacancyPage.visit();\ncy.get('.filterItemsWrapper').should('exist');\ncy.get('.filterItemsWrapper > div').should('have.length.gt', 0);",
+              "err": {},
+              "uuid": "d80bafe6-5335-4496-b017-4a136c0dcb4d",
+              "parentUUID": "34de75aa-0674-4470-80c0-cc31a2a77d1f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Has DIV element with class name \"filterItemsWrapper\" and more than 0 child DIV elements on mobile",
+              "fullTitle": "Test cases for the \"filterItemsWrapper\" DIV Has DIV element with class name \"filterItemsWrapper\" and more than 0 child DIV elements on mobile",
+              "timedOut": null,
+              "duration": 1226,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "vacancyPage.enableMobileView();\nvacancyPage.visit();\ncy.get('.filterItemsWrapper').should('exist');\ncy.get('.filterItemsWrapper > div').should('have.length.gt', 0);",
+              "err": {},
+              "uuid": "f6cfd1e7-9f6f-42ea-af87-7b62de2e5b36",
+              "parentUUID": "34de75aa-0674-4470-80c0-cc31a2a77d1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d80bafe6-5335-4496-b017-4a136c0dcb4d",
+            "f6cfd1e7-9f6f-42ea-af87-7b62de2e5b36"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3433,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

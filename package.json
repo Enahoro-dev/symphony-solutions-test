@@ -6,23 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:run":"cypress run"
-
+    "cypress:run": "cypress run",
+    "test:report": "cypress run --spec cypress/e2e/**/*.cy.js --env allure=true"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.10.0",
+    "cypress-multi-reporters": "^1.6.3",
+    "mochawesome": "^7.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
-    
   },
   "browserslist": [
     "last 1 version",
     "> 1%",
     "not dead"
   ]
-  
 }
