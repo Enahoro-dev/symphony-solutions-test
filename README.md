@@ -6,6 +6,7 @@ This project is a combination of tests aimed at testing certain elements on the 
 You can clone the git repository and then install the necessary dependencies with:
 ``` bash
 git clone https://github.com/Enahoro-dev/symphony-solutions-test.git
+cd symphony-solutions-test
 npm install
 ```
 
