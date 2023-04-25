@@ -1,7 +1,5 @@
-name: Symphony Solutions Tests
-
+name: e2e-tests
 on: [push]
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -11,12 +9,12 @@ jobs:
         containers: [1, 2, 3]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        
+        uses: actions/checkout@v2
       - name: Cypress run
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v4
         with:
-          build: npm run cypress:run --headless --config-file=cypress.config.js --config-file=cypress.config.js
+          start: npm start
+          record: true
+          parallel: true
         env:
-          SPLIT: ${{ strategy.job-total }}
-          SPLIT_INDEX: ${{ strategy.job-index }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
