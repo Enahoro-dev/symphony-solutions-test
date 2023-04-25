@@ -29,5 +29,5 @@ You can see tests reports in the cypress/results/mochawesome folder. These repor
  npm run test:report
 ```
 
-#CI/CD
+# CI/CD
 A CI/CD pipeline was set up for this project using github actions.
