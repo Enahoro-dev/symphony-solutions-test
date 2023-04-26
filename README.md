@@ -30,4 +30,4 @@ Cypress has an inbuilt test reporting capability as a basic report is generated 
 ```
 
 # CI/CD
-A CI/CD pipeline was set up for this project using github actions.
+A CI/CD pipeline was set up for this project using github actions. This is triggered by pushing new commits i.e git push.
